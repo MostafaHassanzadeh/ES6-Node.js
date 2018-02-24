@@ -1,0 +1,27 @@
+const
+request= require('request'),
+requestOption={
+    method: 'post',
+    url: 'https://api.telegram.org/bot121997204:AAEgDIBB5DW8eF6UgfGIGBvxT8ASFwl0szg/sendMessage',
+    body: { 
+        "chat_id":87131919,
+        "text":"hi Mostafa",
+    },
+    json: true,
+},
+requestCallback=(error,respons,body)=>{
+    if(error){
+        console.log('Error:',error);
+        return;
+    }
+    if(!(body&&body.ok)){
+        console.log('Error:not ok',body);
+        return;
+    }
+    console.log('ok');
+
+},
+makeRequest = () => {
+        request(requestOption,requestCallback);  
+};
+makeRequest();          
