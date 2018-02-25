@@ -2,9 +2,9 @@ const
 request= require('request'),
 requestOption={
     method: 'post',
-    url: 'https://api.telegram.org/bot121997204:AAEgDIBB5DW8eF6UgfGIGBvxT8ASFwl0szg/sendMessage',
+    url: 'https://api.telegram.org/bot<token>/sendMessage',
     body: { 
-        "chat_id":87131919,
+        "chat_id":<chatid>,
         "text":"hi Mostafa",
     },
     json: true,
