@@ -1,6 +1,6 @@
 var City,MaxTemp,MinTemp,WindSpeed,ClimateDescription,txt;
 const
-    token = '557766397:AAEGdq4UOO9p69kAIp84AL7hI2T0sek_WFM',
+    token = <token>,
     TelegramBot = require('telegram-bot-api.js').default,
     bot = new TelegramBot(token,{ autoUpdate: true});
     getweather = require('city-weather');
